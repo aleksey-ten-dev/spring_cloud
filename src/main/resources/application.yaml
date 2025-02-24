@@ -1,0 +1,16 @@
+spring:
+    application:
+        name: config-service
+    cloud:
+        config:
+            server:
+                git:
+                    uri: git@github.com:aleksey-ten-dev/config_repo.git
+                    ignore-local-ssh-settings: false
+                    default-label: main
+                    search-paths: "{application}"
+    output:
+        ansi:
+            enabled: always
+server:
+    port: 8888
