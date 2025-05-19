@@ -1,0 +1,6 @@
+services:
+  config-server:
+    build: .
+    container_name: config-server
+    ports:
+      - "8888:8888"
